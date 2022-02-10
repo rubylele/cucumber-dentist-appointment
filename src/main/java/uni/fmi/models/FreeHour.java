@@ -60,11 +60,11 @@ public class FreeHour {
         return owner;
     }
 
-    public Reserve getReservation() {
+    public Reserve getReserve() {
         return reserve;
     }
 
-    public void setReservation(Reserve reserve) {
+    public void setReserve(Reserve reserve) {
         this.reserve = reserve;
     }
 

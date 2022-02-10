@@ -4,17 +4,14 @@ import java.util.*;
 
 public class Reserve {
 
-	 private static final String ReserveNumber = null;
-	private String ReservationNumber;
+	 private String ReserveNumber;
 	 private String RequiredDate;
 	 private String RequiredHour;
-	 private FreeHour FreeHour;
+	 private FreeHour freeHour;
 	 private User owner;
-	private String RequiredDate1;
-	private String RequiredHour1;
 	
     public Reserve(String ReserveNumber, String RequiredDate, String RequiredHour, User owner) {
-    	this.ReservationNumber = ReservationNumber;
+    	this.ReserveNumber = ReserveNumber;
     	this.RequiredDate = RequiredDate;
     	this.RequiredHour = RequiredHour;
     	this.owner = owner;
@@ -25,7 +22,7 @@ public class Reserve {
     }
 
     public void setReserveNumber(String reserveNumber) {
-        this.ReservationNumber = reserveNumber;
+        this.ReserveNumber = reserveNumber;
     }
 
     public String getRequestedDate() {
@@ -40,7 +37,7 @@ public class Reserve {
         this.RequiredDate = fromDate;
     }
 
-    public void setRequestedHour(String fromHour) {
+    public void setRequiredHour(String fromHour) {
         this.RequiredHour = fromHour;
     }
 
@@ -49,7 +46,7 @@ public class Reserve {
     }
     
     public void setFreeHour(FreeHour freeHour) {
-        this.FreeHour = freeHour;
+        this.freeHour = freeHour;
     }
 
     public void setOwner(User owner) {
