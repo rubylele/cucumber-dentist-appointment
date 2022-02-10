@@ -3,4 +3,17 @@
   <groupId>uni.fmi</groupId>
   <artifactId>cucumber-university-project</artifactId>
   <version>1.5.6-SNAPSHOT</version>
+  
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+    <scope>test</scope>
+</dependency>
+  
+  
+  </dependencies>
+  
 </project>
