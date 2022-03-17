@@ -391,7 +391,7 @@
 											"top": 369,
 											"width": 312.7744140625,
 											"height": 13,
-											"text": "+setReservation(reserve: Reserve): void",
+											"text": "+setReserve(reserve: Reserve): void",
 											"horizontalAlignment": 0
 										},
 										{
@@ -724,7 +724,7 @@
 											"top": 338,
 											"width": 335.60693359375,
 											"height": 13,
-											"text": "+setReserveNumber(reservationNumber: String): void",
+											"text": "+setReserveNumber(reserveNumber: String): void",
 											"horizontalAlignment": 0
 										},
 										{
@@ -826,7 +826,7 @@
 											"top": 428,
 											"width": 335.60693359375,
 											"height": 13,
-											"text": "+setFreeHour(availableHour: FreeHour): void",
+											"text": "+setFreeHour(freeHour: FreeHour): void",
 											"horizontalAlignment": 0
 										},
 										{
@@ -3182,7 +3182,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF+jTKYz2B6beY="
 							},
-							"name": "setReservation",
+							"name": "setReserve",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -3381,7 +3381,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF+jVn+FGQUibY="
 									},
-									"name": "reservationNumber",
+									"name": "reserveNumber",
 									"type": "String"
 								},
 								{
@@ -3525,7 +3525,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF+jYd2eXl6lQU="
 									},
-									"name": "availableHour",
+									"name": "freeHour",
 									"type": {
 										"$ref": "AAAAAAF+jVwztmTAe3w="
 									}

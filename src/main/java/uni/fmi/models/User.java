@@ -1,80 +1,61 @@
 package uni.fmi.models;
 
-import java.util.Set;
+import java.util.*;
 
+/**
+ * 
+ */
 public class User {
 
-	private String firstName;
-    private String lastName;
-    private String email;
-    private String phoneNumber;
-    private Role role;
-    private Set<FreeHour> freeHours;
+    private String Name;
+    private String Email;
+    private String Phone;
+    private Set<FreeHour> free_hours;
     private Set<Reserve> reserves;
-	
-    public User(final String firstName, final String lastName, final String email, final String phoneNumber) {
-    	this.firstName = firstName;
-    	this.lastName = lastName;
-    	this.email = email;
-    	this.phoneNumber = phoneNumber;
-    }
+	private Set<Role> roles;
 
-    public String getFirstName() {
-        
-        return firstName;
+    public User(final String email) {
+    	this.Email = email;
     }
-
-    public String getlastName() {
-        return lastName;
+    
+    public String getName() {
+        return Name;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getPhone() {
+        return Phone;
     }
-
-    
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+    	this.Name = name;
     }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
     public void setEmail(String email) {
-        this.email = email;
+        this.Email = email;
     }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setPhone(String phone) {
+    	this.Phone = phone;
     }
-
-    public Set<Reserve> getReservations() {
+    public Set<Reserve> getReserves() {
         return reserves;
     }
-
-    public void setReservation(Set<Reserve> reserves) {
+    public void setReserve(Set<Reserve> reserve) {
         this.reserves = reserves;
     }
-
     public Set<FreeHour> getFreeHours() {
-        return freeHours;
+        return free_hours;
     }
 
-    public void setAvailableHour(Set<FreeHour> freeHours) {
-        this.freeHours = freeHours;
+    public void setFreeHour(Set<FreeHour> free_hours) {
+        this.free_hours = free_hours;
     }
-
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
-    }
+    
+    public Set<Role> getRoles() {
+		return roles;
+	}
+	public void setRoles(Set<Role> roles) {
+		this.roles = roles;
+	}
 
 }
